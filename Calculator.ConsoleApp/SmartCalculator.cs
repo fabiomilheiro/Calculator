@@ -5,9 +5,9 @@ namespace Calculator.ConsoleApp
 {
     public class SmartCalculator
     {
-        public decimal Calculate(string source)
+        public decimal Calculate(string expression)
         {
-            var result = new DataTable().Compute(source, null);
+            var result = new DataTable().Compute(expression, null);
 
             return Convert.ToDecimal(result);
         }
